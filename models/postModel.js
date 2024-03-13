@@ -18,7 +18,7 @@ const postSchema = new mongoose.Schema({
       ref:"Like",
     },
   ],
-  Comments: [
+  comments: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "comment",
@@ -32,3 +32,5 @@ const postSchema = new mongoose.Schema({
 //export
 
 module.exports=mongoose.model("Post", postSchema);
+
+

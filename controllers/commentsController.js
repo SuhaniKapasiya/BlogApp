@@ -34,9 +34,20 @@ exports.createComments = async (req, res)=>{
 
     }
     
+
      catch(error){
-        return res.status(500).json({
-            error:"Error while Creating comments",
+
+        console.log("eoorr  - ",error);
+        return res.status(400).json({
+            
+            error:error,
+            
         });
      }
+
 }
+
+
+
+
+
